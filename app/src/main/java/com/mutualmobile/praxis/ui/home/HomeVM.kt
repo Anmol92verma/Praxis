@@ -4,16 +4,16 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.viewModelScope
 import com.mutualmobile.praxis.data.SafeResult
-import com.mutualmobile.praxis.data.remote.model.Joke
+import com.mutualmobile.praxis.domain.model.Joke
 import com.mutualmobile.praxis.domain.usecases.GetFiveRandomJokesUseCase
-import com.mutualmobile.praxis.ui.base.BaseViewModel
+import com.mutualmobile.praxis.ui.base.BaseVM
 import kotlinx.coroutines.launch
 import timber.log.Timber
 import javax.inject.Inject
 
-class HomeViewModel @Inject constructor(
+class HomeVM @Inject constructor(
   private val getFiveRandomJokesUseCase: GetFiveRandomJokesUseCase
-) : BaseViewModel() {
+) : BaseVM() {
 
   private var _viewState: MutableLiveData<HomeViewState> = MutableLiveData()
   val viewState: LiveData<HomeViewState> = _viewState
@@ -23,7 +23,7 @@ class HomeViewModel @Inject constructor(
     viewModelScope.launch {
       when (val result = getFiveRandomJokesUseCase.perform()) {
         is SafeResult.Success -> {
-          _viewState.value = HomeViewState.ShowJokes(result.data.value)
+          _viewState.value = HomeViewState.ShowJokes(result.data)
         }
         is SafeResult.Failure -> {
           Timber.e("onError")

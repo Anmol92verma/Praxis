@@ -5,8 +5,8 @@ import android.os.Parcelable
 import androidx.core.view.isVisible
 import androidx.lifecycle.Observer
 import com.mutualmobile.praxis.R
-import com.mutualmobile.praxis.data.remote.model.Joke
 import com.mutualmobile.praxis.databinding.ActivityHomeBinding
+import com.mutualmobile.praxis.domain.model.Joke
 import com.mutualmobile.praxis.ui.base.ActivityNavigator
 import com.mutualmobile.praxis.ui.base.BaseActivity
 import com.mutualmobile.praxis.ui.home.HomeViewState.Error
@@ -16,8 +16,8 @@ import com.mutualmobile.praxis.ui.home.about.AboutFragment
 import com.mutualmobile.praxis.ui.joke.ShowJokeActivity
 import java.util.ArrayList
 
-class HomeActivity : BaseActivity<ActivityHomeBinding, HomeViewModel>() {
-  override fun getViewModelClass(): Class<HomeViewModel> = HomeViewModel::class.java
+class HomeActivity : BaseActivity<ActivityHomeBinding, HomeVM>() {
+  override fun getViewModelClass(): Class<HomeVM> = HomeVM::class.java
 
   override fun layoutId(): Int = R.layout.activity_home
 
