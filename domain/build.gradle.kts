@@ -35,15 +35,6 @@ dependencies {
 
   /* Dependency Injection */
   api(Lib.Di.DAGGER)
-  api(Lib.Di.DAGGER_ANDROID)
   kapt(Lib.Di.DAGGER_PROCESSOR)
   kapt(Lib.Di.DAGGER_COMPILER)
-  kaptTest(Lib.Di.DAGGER_COMPILER)
-
-  testApi(TestLib.JUNIT)
-  testApi(TestLib.ANDROID_JUNIT)
-  testApi(TestLib.CORE_TEST)
-  testApi(TestLib.MOCK_WEB_SERVER)
-  testApi(TestLib.ARCH_CORE)
-  testApi(TestLib.ROBO_ELECTRIC)
 }

@@ -1,4 +1,4 @@
-package com.mutualmobile.praxis.domain.injection.module
+package com.mutualmobile.praxis.injection.module
 
 import com.mutualmobile.praxis.data.repository.JokesRepo
 import com.mutualmobile.praxis.data.sources.IJokesRemoteSource

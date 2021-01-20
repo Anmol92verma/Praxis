@@ -1,10 +1,10 @@
-package com.mutualmobile.praxis.domain.useCaseTest
+package com.mutualmobile.praxis.useCaseTest
 
 import com.mutualmobile.praxis.data.SafeResult
-import com.mutualmobile.praxis.domain.BaseTest
-import com.mutualmobile.praxis.domain.injection.component.TestAppComponent
+import com.mutualmobile.praxis.BaseTest
+import com.mutualmobile.praxis.injection.component.TestAppComponent
 import com.mutualmobile.praxis.domain.usecases.GetFiveRandomJokesUseCase
-import com.mutualmobile.praxis.domain.util.FileUtil
+import com.mutualmobile.praxis.util.FileUtil
 import junit.framework.TestCase.assertEquals
 import kotlinx.coroutines.runBlocking
 import okhttp3.mockwebserver.MockResponse

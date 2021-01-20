@@ -1,9 +1,9 @@
-package com.mutualmobile.praxis.domain
+package com.mutualmobile.praxis
 
 import android.os.Build
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
-import com.mutualmobile.praxis.domain.injection.component.TestAppComponent
+import com.mutualmobile.praxis.injection.component.TestAppComponent
 import okhttp3.mockwebserver.MockWebServer
 import org.junit.After
 import org.junit.Before

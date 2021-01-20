@@ -1,4 +1,4 @@
-package com.mutualmobile.praxis.domain.util
+package com.mutualmobile.praxis.util
 
 import java.io.BufferedReader
 

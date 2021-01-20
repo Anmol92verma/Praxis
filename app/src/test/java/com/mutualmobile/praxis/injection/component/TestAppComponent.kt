@@ -1,12 +1,12 @@
-package com.mutualmobile.praxis.domain.injection.component
+package com.mutualmobile.praxis.injection.component
 
 import android.content.Context
-import com.mutualmobile.praxis.domain.TestApplication
-import com.mutualmobile.praxis.domain.injection.module.FakeNetworkModule
-import com.mutualmobile.praxis.domain.injection.module.TestRepositoryModule
-import com.mutualmobile.praxis.domain.injection.module.TestSourcesModule
-import com.mutualmobile.praxis.domain.injection.module.TestUseCaseModule
-import com.mutualmobile.praxis.domain.useCaseTest.GetFiveRandomJokesUseCaseTest
+import com.mutualmobile.praxis.TestApplication
+import com.mutualmobile.praxis.injection.module.FakeNetworkModule
+import com.mutualmobile.praxis.injection.module.TestRepositoryModule
+import com.mutualmobile.praxis.injection.module.TestSourcesModule
+import com.mutualmobile.praxis.injection.module.TestUseCaseModule
+import com.mutualmobile.praxis.useCaseTest.GetFiveRandomJokesUseCaseTest
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector

@@ -88,7 +88,7 @@ dependencies {
   api(Lib.Async.COROUTINES)
   api(Lib.Async.COROUTINES_ANDROID)
 
-  /*Testing*/
+  /* Testing */
   testImplementation(TestLib.JUNIT)
   testImplementation(TestLib.CORE_TEST)
   testImplementation(TestLib.ANDROID_JUNIT)

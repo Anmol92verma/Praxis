@@ -92,7 +92,7 @@ object Lib {
 object TestLib {
   private const val COROUTINES_VERSION = "1.3.7"
   private const val ANDROID_JUNIT_VERSION = "1.0.0"
-  private const val ROBO_ELECTRIC_VERSION = "4.3"
+  private const val ROBO_ELECTRIC_VERSION = "4.4"
   private const val ARCH_CORE_VERSION = "2.1.0"
   private const val MOCK_WEB_SERVER_VERSION = "4.7.2"
   private const val CORE_TEST_VERSION = "1.2.0"
