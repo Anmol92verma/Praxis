@@ -11,6 +11,7 @@ import com.mutualmobile.praxis.injection.module.NetworkModule
 import com.mutualmobile.praxis.injection.module.PreferenceModule
 import com.mutualmobile.praxis.injection.module.ViewModelFactoryModule
 import com.mutualmobile.praxis.injection.qualifiers.ApplicationContext
+import com.mutualmobile.praxis.manager.PushNotificationService
 import dagger.BindsInstance
 import dagger.Component
 import dagger.android.AndroidInjector
@@ -32,6 +33,7 @@ import javax.inject.Singleton
     ]
 )
 interface AppComponent : AndroidInjector<BaseApplication> {
+  fun injectPushNotificationService(service: PushNotificationService)
 
   @Component.Builder
   abstract class Builder : AndroidInjector.Builder<BaseApplication>() {
